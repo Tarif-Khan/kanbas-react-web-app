@@ -1,0 +1,17 @@
+.list-group .list-group-item {
+    width: 80px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.list-group .list-group-item.active {
+    background-color: white;
+    text-align: center;
+    color: red;
+
+}
+
+.list-group  .list-group-item i {
+    color: red;
+}
