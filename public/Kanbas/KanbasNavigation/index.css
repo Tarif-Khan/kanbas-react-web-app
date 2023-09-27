@@ -1,17 +1,27 @@
-.list-group .list-group-item {
-    width: 80px;
+
+#sidebar .list-group .list-group-item {
+    width: 85px;
     background-color: black;
     text-align: center;
     color: white;
+    padding: 5px;
 }
 
-.list-group .list-group-item.active {
+#sidebar .list-group .list-group-item.active {
     background-color: white;
-    text-align: center;
-    color: red;
-
-}
-
-.list-group  .list-group-item i {
     color: red;
 }
+
+#sidebar .list-group .list-group-item i {
+    color: red;
+    margin: 5px;
+}
+
+#sidebar{
+    background-color: black;
+    width: 85px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
