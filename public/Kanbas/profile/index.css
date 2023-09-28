@@ -16,6 +16,7 @@
     background-color: black;
     color: white;
     padding: 5px;
+    border: none;
 }
 
 #sidebar .list-group-item.active {
@@ -34,6 +35,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    border: none;
 }
 
 #profile-bar .list-group-item {
@@ -61,6 +63,7 @@
 .myRow{
     display: flex;
     flex-direction: row;
+    padding-right: 35px;
 }
 
 .Heading{
@@ -106,18 +109,88 @@
     text-decoration: none;
 }
 
-#Content #Icon{
-
-}
 
 #Content #Name{
     padding-top: 20px;
 }
 
-#EditButton{
-    padding-right: 35px;
+#EditButton {
+    height: 50px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
 }
 
-#EditButton #Button{
-    margin-bottom: 10px;
+#Links{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+}
+
+#Ebuttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#Cancel-Editing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+#Content .form-control{
+    width: 50%;
+}
+
+#Content #Links .form-control{
+    width:80%
+}
+
+#Links i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70;   
+    height: 130;
+}
+
+
+#TitleFlex{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+#section{
+    font-size: x-large;
+    font-weight:450;
+}
+
+.form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+#profileLink a{
+color: red;
+text-decoration: none;    
+}
+
+#separate{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#separate #links{
+    padding-top: 0;
+}
+
+#separate #section{
+    padding-top: 40px
 }
