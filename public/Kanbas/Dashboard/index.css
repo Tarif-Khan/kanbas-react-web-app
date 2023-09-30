@@ -96,7 +96,6 @@
 }
 
 .card{
-    margin-right:90;
     margin-left: 30;
     margin-top: 20;
     margin-bottom: 20;
@@ -106,5 +105,7 @@
 .card-title a{
     text-decoration: none;
 }
+
+
 
    
