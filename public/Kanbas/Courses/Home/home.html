@@ -1,130 +1,525 @@
 <html>
-    <head>
-    </head>
-    <body>
 
-   
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="../../profile/index.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="home.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
+<head>
+    <link href="../../../vendors/bootstrap/bootstrap-5.1.3-dist/css/bootstrap.css"
+        rel="stylesheet" />
+    <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
 
-        <td valign="top">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="../../assignments/index.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="../../grades.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </td>
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <img src="../../NEU.png" class="list-group-item" />
+            <a href="../../profile/index.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-user-circle text-secondary"></i>
+                <div>Account</div>
+            </a>
 
-        <td>
-            <button>Collapse all</button>
+            <a href="../../Dashboard/index.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-tachometer-alt"></i>
+                <div>Dashboard</div>
+            </a>
 
-<button>View Progress</button>
-
-<select>
-    <option>Publish All</option>
-    <option>Publish All modules and items</option>
-    <option>Publish modules only</option>
-    <option>UnPublish All</option>
-  </select>
-
-<button>Module</button>
+            <a href="../Courses/Home/home.html"
+                class="list-group-item list-group-item-action active">
+                <i class="fas fa-book"></i>
+                <div>Courses</div>
+            </a>
 
 
- <ul>
-    <li><h2>Week 0 - INTRO</h2></li>
-    <ul>
-        <li>LEARNING OBJECTIVES</li>
-        <ul>
-            <li>Introduction to the course</li>
-            <li>Learn what is Web Development</li>
-            <li>Creating a development environment</li>
-            <li>Creating a Web Application</li>
-            <li>Getting started with the 1st assignment</li>
-        </ul>
-        <li>READING</li>
-        <ul>
-            <li>Full Stack Developer - Chapter 1 - Introduction</li>
-            <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-        </ul>
-        <li>SLIDES</li>
-        <ul>
-            <li><a href="#">Introduction to Web Development Links to an external site.</a></li>
-            <li><a href="#">Creating an HTTP server with Node.js Links to an external site.</a></li>
-            <li><a href="#">Creating a React Application Links to an external site.</a></li>
-        </ul>
-    </ul>
-    <li><h2>Week 1 - HTML</h2></li>
-    <ul>
-        <li>LEARNING OBJECTIVES</li>
-        <ul>
-            <li>Learn how to create user interfaces with HTML</li>
-            <li>Keep working on assignment 1</li>
-            <li>Deploy the assignment to Netlify</li>
-        </ul>
-        <li>READING</li>
-        <ul>
-            <li>Full Stack Developer - Chapter 1 - Introduction</li>
-            <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-        </ul>
-    </ul>
-</ul>
-        </td>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-calendar-alt"></i>
+                <div>Calendar</div>
+            </a>
 
-        <td valign="top">
-            <h1>Course Status</h1>
-<button>Unpublish</button>
-<button>Published</button>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-inbox"></i>
+                <div>Inbox</div>
+            </a>
 
-<ul>
-    <li><a href="#">Import Existing Content</a></li>
-    <li><a href="#">Import From Commons</a></li>
-    <li><a href="#">Choose Home Page</a></li>
-    <li><a href="#">View Course Stream</a></li>
-    <li><a href="#">New Announcement</a></li>
-    <li><a href="#">New Analytics</a></li>
-    <li><a href="#">View Course Notifications</a></li>
-</ul>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-clock"></i>
+                <div>History</div>
+            </a>
 
-<br>
-<br>
-<h1>Coming Up</h1>
-<a href="#">View Calendar</a>
-<ul>
-    <li><a href="#">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a></li>
-    <li><a href="#">Lecture CS4550.12631.202410 Sep 11 at 11:45am</a></li>
-    <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
-</ul>
-        </td>
-    </tr>
-</table>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-desktop"></i>
+                <div>Studio</div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-chevron-circle-right"></i>
+                <div>Commons</div>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-question-circle"></i>
+                <div>Help</div>
+            </a>
+        </div>
+
+        <div class="col">
+            <div class="Heading">
+                <h2>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <i class="fas fa-bars fa-lg"></i>
+                            <li class="breadcrumb-item CourseTitle"><a
+                                    href="#">CS4550.12631.202410</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                    </nav>
+                </h2>
+            </div>
+
+            <div class="myRow">
+                <div id="profile-bar">
+                    <div id="CourseHeading"><small class="text-truncate">202410_1 Fall 2023 Semester
+                            Full Term</small></div>
+
+                    <a href="home.html" class="list-group-item list-group-item-action active">
+                        <div>Home</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Modules</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Piazza</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Zoom Meetings</div>
+                    </a>
+                    <a href="../../assignments/index.html"
+                        class="list-group-item list-group-item-action">
+                        <div>Assignments</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Quizzes</div>
+                    </a>
+                    <a href="../../grades.html" class="list-group-item list-group-item-action">
+                        <div>Grades</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>People</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Panopto Video</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Discussions</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Announcements</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Pages</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Files</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Rubrics</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Outcomes</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Collaborations</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Syllabus</div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Progress Reports
+                            (EAB Navigate)
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div>Settings</div>
+                    </a>
+                </div>
+                <div id="Content">
+                    <div id="buttonRow">
+                        <a href="#" id="threeDots" class="btn btn-outline-secondary">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i></i>
+                        </a>
+
+                        <a href="#" id="EditButton" class="btn btn-danger">
+                            <i class="fa fa-plus" aria-hidden="true"></i>Module
+                        </a>
+
+                        <a href="#" id="EditButton" class="btn btn-outline-secondary">
+                            <i class="fa fa-check-circle " aria-hidden="true"></i>Publish All
+                        </a>
+
+                        <a href="#" id="EditButton" class="btn btn-outline-secondary">
+                            View Progress
+                        </a>
+
+                        <a href="#" id="EditButton" class="btn btn-outline-secondary">
+                            Collapse All
+                        </a>
+
+                    </div>
+
+                    <hr>
+
+                    <div id="HomeWeek">
+                        <div class="list-group-item list-group-item-secondary py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i class="fas fa-caret-down"></i>
+                            <span id="Week">Week 0 - INTRO</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-caret-down"></i>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItems">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">LEARNING OBJECTIVES</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Introduction to the course</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Learn what is Web Development</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Creating a development environment</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Creating a Web Application</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Getting started with the 1rst assignment</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItems">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">READING</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Full Stack Developer - Chapter 1 -
+                                Introduction</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Full Stack Developer - Chapter 2 - Creating User
+                                Interfaces With HTML</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItems">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">SLIDES</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i class="fas fa-paperclip text-success"></i>
+                            <a href="#">Introduction to Web Development <i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i class="fas fa-paperclip text-success"></i>
+                            <a href="#">Creating an HTTP server with Node.js <i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i class="fas fa-paperclip text-success"></i>
+                            <a href="#">Creating a React Application <i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeWeek">
+                        <div class="list-group-item list-group-item-secondary py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <i class="fas fa-caret-down"></i>
+                            <span id="Week">Week 1 - HTML</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-caret-down"></i>
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItems">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">LEARNING OBJECTIVES</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Learn how to create user interfaces with
+                                HTML</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Keep working on assignment 1</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Deploy the assignment to Netlify</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItems">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">READING</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Full Stack Developer - Chapter 1 -
+                                Introduction</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="HomeItemOItem">
+                        <div class="list-group-item py-3">
+                            <i class="fas fa-grip-vertical"></i>
+                            <span id="Dimension1">Full Stack Developer - Chapter 2 - Creating User
+                                Interfaces With HTML</span>
+                            <div class="float-end">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Status">
+                    <span id="StatusHead">Course Status</span>
+                    <div class="btn-group" style="padding-bottom: 20px;">
+                        <button type="button" style="width: 120" class="btn btn-outline-secondary">
+                            <span>
+                                <i class="fas fa-ban"></i>
+                            </span> Unpublish</button>
+                        <button type="button" style="width: 120" class="btn btn-success">
+                            <span>
+                                <i class="fas fa-check-circle"></i>
+                            </span>Published</button>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-secondary">
+                        <span><i class="fas fa-file-import"></i></span> Import Existing Content
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary">
+                        <span><i class="fas fa-chevron-circle-right"></i></span> Import From Commons
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary">
+                        <span><i class="fas fa-bullseye"></i></span> Choose Home Page
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary">
+                        <span><i class="fas fa-chart-bar"></i></span> View Course Stream
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary">
+                        <span><i class="fa-solid fa-radio"></i></span> New Announcement
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary">
+                        <span><i class="fas fa-chart-bar"></i></span> New Analytics
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary">
+                        <span><i class="fas fa-bell"></i></span> View Course Notifications
+                    </button>
+
+                    <span id="StatusHead">To Do</span>
+                    <hr>
+                    <span id="toDo">1 <a href="#">Grade A1 - ENV + HTML</a></span>
+                    <small>100 points | Sep 18 at 11:59pm </small>
+
+                    <span id="Coming"> <span id="StatusHead">Coming Up</span> <span id="cal"> <i
+                                class="fas fa-calendar-alt"></i> <span id="cal2"><a href="#">View
+                                    Calendar</a></span></span> </span>
+                    <hr>
+                    <span>
+                        <i class="fas fa-calendar-alt"></i> <span>
+                            <span id="toDoItem">Lecture</span>
+                            <div id="desc">
+                                <small>
+                                    CS4550.12631.202410
+                                    <br>
+                                    Sep 11 at 11:45am
+                                </small>
+                            </div>        
+                        </span>
+                    </span>
+
+                    <span>
+                        <i class="fas fa-calendar-alt"></i> <span>
+                            <span id="toDoItem">CS5610 06 SP23 Lecture</span>
+                            <div id="desc">
+                                <small>
+                                    CS4550.12631.202410
+                                    <br>
+                                    Sep 11 at 6pm
+                                </small>
+                            </div>        
+                        </span>
+                    </span>
+
+                    <span>
+                        <i class="fas fa-calendar-alt"></i> <span>
+                            <span id="toDoItem">CS5610 Web development Summer 1 2023 - LECTURE</span>
+                            <div id="desc">
+                                <small>
+                                    CS4550.12631.202410
+                                    <br>
+                                    Sep 11 at 7pm
+                                </small>
+                            </div>        
+                        </span>
+                    </span>
+
+                    <small style="color: red;">12 more in the next week...</small>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
