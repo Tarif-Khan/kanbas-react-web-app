@@ -305,3 +305,19 @@ text-decoration: none;
     padding-left: 30px;
     padding-bottom: 15px;
 }
+
+#secondMenu a div{
+    color: red;
+}
+
+#secondMenu a i{
+    color: red;
+}
+
+#secondMenu .list-group-item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 5px;
+    border: none;
+}
