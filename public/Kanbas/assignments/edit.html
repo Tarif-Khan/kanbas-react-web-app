@@ -202,7 +202,8 @@
 
 
             <div class="form-group row mb-3" style="margin-right: 475;">
-              <label for="Display Grade As" class="d-flex col-auto col-form-label justify-content-end w-25">
+              <label for="Display Grade As"
+                class="d-flex col-auto col-form-label justify-content-end w-25">
                 <div id="section">Display Grade As</div>
               </label>
               <select id="Display Grade As" class="form-select" style="width: 50%;">
@@ -212,121 +213,132 @@
               </select>
             </div>
 
-          
+
             <div class="form-group row mb-3" style="margin-right: 300;">
-              <input class="form-check-input" type="checkbox" value="" id="Do not" style="margin-left: 240;">
+              <input class="form-check-input" type="checkbox" value="" id="Do not"
+                style="margin-left: 240;">
               <label for="Do not" class="d-flex col-auto col-check-label justify-content-end w-25">
                 Do not count this assignment towards the final grade.
               </label>
             </div>
 
-
-            <div id="fdiv" style="margin-top: 30;">
-              <label for="Submission Type" class="form-label">
-                <div id="section">Submission Type</div>
-              </label>
-              <select id="Submission Type" class="form-select" style="width: 50%;">
-                <option>Online</option>
-              </select>
-            </div>
-
-            <div id="fdiv">
-              <div id="section">Online Entry Options</div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Text Entry">
-                <label class="form-check-label" for="Text Entry">
-                  Text Entry
+            <div class="border" style="width: 50%;">
+              <div id="fdiv" style="margin-top: 30;">
+                <label for="Submission Type" class="form-label">
+                  <div id="section">Submission Type</div>
                 </label>
+
+                <select id="Submission Type" class="form-select" style="width: 50%;">
+                  <option>Online</option>
+                </select>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Website URL">
-                <label class="form-check-label" for="Website URL">
-                  Website URL
+
+              <div id="fdiv">
+                <div id="section">Online Entry Options</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Text Entry">
+                  <label class="form-check-label" for="Text Entry">
+                    Text Entry
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Website URL">
+                  <label class="form-check-label" for="Website URL">
+                    Website URL
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Media Recordings">
+                  <label class="form-check-label" for="Media Recordings">
+                    Media Recordings
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Student Annotation">
+                  <label class="form-check-label" for="Student Annotation">
+                    Student Annotation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="File Uploads">
+                  <label class="form-check-label" for="File Uploads">
+                    File Uploads
+                  </label>
+                </div>
+              </div>
+
+              <div id="fdiv">
+                <label for="Submission Attempts" class="form-label">
+                  <div id="section">Submission Attempts</div>
                 </label>
+                <select id="Submission Attempts" class="form-select" style="width: 50%;">
+                  <option>Unlimited</option>
+                  <option>Limited</option>
+                </select>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Media Recordings">
-                <label class="form-check-label" for="Media Recordings">
-                  Media Recordings
+
+
+              <div id="fdiv">
+                <label for="Plagiarism Review" class="form-label">
+                  <div id="section">Plagiarism Review</div>
                 </label>
+                <select id="Plagiarism Review" class="form-select" style="width: 50%;">
+                  <option>None</option>
+                </select>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="Student Annotation">
-                <label class="form-check-label" for="Student Annotation">
-                  Student Annotation
+
+              <div style="padding-bottom: 10;">
+                <div id="section">Group Assignment</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="group-assignment"
+                    id="group-assignment">
+                  <label class="form-check-label" for="group-assignment">
+                    This is a group assignment
+                  </label>
+                </div>
+              </div>
+
+              <div style="padding-bottom: 10;">
+                <div id="section">Peer Reviews</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Peer Reviews"
+                    id="Peer Reviews">
+                  <label class="form-check-label" for="Peer Reviews">
+                    Require Peer Reviews
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="border" style="width: 50%; margin-top: 10px;">
+              <div id="fdiv">
+                <label for="Assign" class="form-label">
+                  <div id="section">Assign To</div>
                 </label>
+                <input id="Assign" class="form-control">
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="File Uploads">
-                <label class="form-check-label" for="File Uploads">
-                  File Uploads
-                </label>
+
+              <div id=fdiv>
+                <div id="section">Due</div>
+                <input type="date" class="form-control">
               </div>
-            </div>
 
-            <div id="fdiv">
-              <label for="Submission Attempts" class="form-label">
-                <div id="section">Submission Attempts</div>
-              </label>
-              <select id="Submission Attempts" class="form-select" style="width: 50%;">
-                <option>Unlimited</option>
-                <option>Limited</option>
-              </select>
-            </div>
-
-
-            <div id="fdiv">
-              <label for="Plagiarism Review" class="form-label">
-                <div id="section">Plagiarism Review</div>
-              </label>
-              <select id="Plagiarism Review" class="form-select" style="width: 50%;">
-                <option>None</option>
-              </select>
-            </div>
-
-            <div style="padding-bottom: 10;">
-              <div id="section">Group Assignment</div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="group-assignment"
-                  id="group-assignment">
-                <label class="form-check-label" for="group-assignment">
-                  This is a group assignment
-                </label>
+              <div id=fdiv>
+                <div id="section">Available From</div>
+                <input type="date" class="form-control">
               </div>
-            </div>
 
-            <div style="padding-bottom: 10;">
-              <div id="section">Peer Reviews</div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Peer Reviews" id="Peer Reviews">
-                <label class="form-check-label" for="Peer Reviews">
-                  Require Peer Reviews
-                </label>
+              <div id=fdiv>
+                <div id="section">Until</div>
+                <input type="date" class="form-control">
               </div>
+
+              
+                <button type="button" class="btn btn-outline-secondary" style="width: 100%;"><i class="fas fa-plus"></i> ADD</button>
+              
+            </div>
             </div>
 
-            <div id="fdiv">
-              <label for="Assign" class="form-label">
-                <div id="section">Assign To</div>
-              </label>
-              <input id="Assign" class="form-control">
-            </div>
-
-            <div id=fdiv>
-              <div id="section">Due</div>
-              <input type="date" class="form-control">
-            </div>
-
-            <div id=fdiv>
-              <div id="section">Available From</div>
-              <input type="date" class="form-control">
-            </div>
-
-            <div id=fdiv>
-              <div id="section">Until</div>
-              <input type="date" class="form-control">
-            </div>
-          </div>
+           
 
           <div id="separate">
             <hr>
