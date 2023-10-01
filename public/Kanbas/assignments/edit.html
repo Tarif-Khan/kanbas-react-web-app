@@ -65,8 +65,10 @@
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <i class="fas fa-bars fa-lg"></i>
-              <li class="breadcrumb-item CourseTitle"><a href="../Courses/Home/home.html">CS4550.12631.202410</a></li>
-              <li class="breadcrumb-item CourseTitle" style="color: red;"><a href="assignments.html">Assignments</a></li>
+              <li class="breadcrumb-item CourseTitle"><a
+                  href="../Courses/Home/home.html">CS4550.12631.202410</a></li>
+              <li class="breadcrumb-item CourseTitle" style="color: red;"><a
+                  href="assignments.html">Assignments</a></li>
               <li class="breadcrumb-item CourseTitle" aria-current="page">A1 - ENV + HTML</li>
             </ol>
           </nav>
@@ -148,40 +150,49 @@
           <div id="buttonRow">
             <a href="#" id="threeDots" class="btn btn-outline-secondary">
               <i class="fa fa-ellipsis-v" aria-hidden="true"></i></i>
-          </a>
+            </a>
 
-          <span id="section" style="margin-right: 20; color: green; margin-top: 10;">
-            <i class="fas fa-check-circle">Published</i>
-          </span>
-        </div>
+            <span id="section" style="margin-right: 20; color: green; margin-top: 10;">
+              <i class="fas fa-check-circle">Published</i>
+            </span>
+          </div>
 
-        <hr>
+          <hr>
 
-        <div class="col" style="display: flex; flex-direction: column;">
-
-        
-          <form class="form-inline">
-            <label for="Assignment Name" class="form-label">
-              <div id="section">Assignment Name</div>
-            </label>
-            <input id="Assignment Name" type="text" class="form-control" , value="A1 - ENV + HTML">
-
-            <textarea class="form-control" style="margin-top: 10; margin-bottom: 10; height: 120;"
-              placeholder="This assingment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub repository, and then deploying the content to a remote server hosted on Netlify."></textarea>
+          <div class="col" style="display: flex; flex-direction: column;">
 
 
-            <div id="fdiv">
-              <label for="Points" class="form-label">
+            <form class="form-inline">
+              <label for="Assignment Name" class="form-label">
+                <div id="section">Assignment Name</div>
+              </label>
+              <input id="Assignment Name" type="text" class="form-control" ,
+                value="A1 - ENV + HTML">
+
+              <textarea class="form-control" style="margin-top: 10; margin-bottom: 10; height: 120;"
+                placeholder="This assingment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub repository, and then deploying the content to a remote server hosted on Netlify."></textarea>
+
+
+
+
+          </div>
+
+          <div class="col" style="display: flex; flex-direction: column;">
+            <div class="form-group row mb-3" style="margin-right: 900;">
+              <label for="Points" class="d-flex col-auto col-form-label justify-content-end w-25">
                 <div id="section">Points</div>
               </label>
-              <input id="Points" type="number" max="100" value="100" class="form-control">
+              <div class="col-6">
+                <input type="text" class="form-control" id="Points" style="width: 500;" />
+              </div>
             </div>
 
-            <div id="fdiv">
-              <label for="Assignment Group" class="form-label">
+            <div class="form-group row mb-3" style="margin-right: 400;">
+              <label for="Assignment Group"
+                class="d-flex col-auto col-form-label justify-content-end w-25">
                 <div id="section">Assignment Group</div>
               </label>
-              <select id="Assignment Group" class="form-select" style="width: 50%;">
+              <select id="Assignment Group" class="form-select" style="width: 32%;">
                 <option>ASSIGNMENTS</option>
                 <option>QUIZZES</option>
                 <option>EXAMS</option>
@@ -189,8 +200,9 @@
               </select>
             </div>
 
-            <div id="fdiv">
-              <label for="Display Grade As" class="form-label">
+
+            <div class="form-group row mb-3" style="margin-right: 475;">
+              <label for="Display Grade As" class="d-flex col-auto col-form-label justify-content-end w-25">
                 <div id="section">Display Grade As</div>
               </label>
               <select id="Display Grade As" class="form-select" style="width: 50%;">
@@ -198,6 +210,14 @@
                 <option>Letter Grade</option>
                 <option>Pass/Fail</option>
               </select>
+            </div>
+
+          
+            <div class="form-group row mb-3" style="margin-right: 300;">
+              <input class="form-check-input" type="checkbox" value="" id="Do not" style="margin-left: 240;">
+              <label for="Do not" class="d-flex col-auto col-check-label justify-content-end w-25">
+                Do not count this assignment towards the final grade.
+              </label>
             </div>
 
 
@@ -211,48 +231,48 @@
             </div>
 
             <div id="fdiv">
-            <div id="section">Online Entry Options</div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="Text Entry">
-              <label class="form-check-label" for="Text Entry">
-                Text Entry
-              </label>
+              <div id="section">Online Entry Options</div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Text Entry">
+                <label class="form-check-label" for="Text Entry">
+                  Text Entry
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Website URL">
+                <label class="form-check-label" for="Website URL">
+                  Website URL
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Media Recordings">
+                <label class="form-check-label" for="Media Recordings">
+                  Media Recordings
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="Student Annotation">
+                <label class="form-check-label" for="Student Annotation">
+                  Student Annotation
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="File Uploads">
+                <label class="form-check-label" for="File Uploads">
+                  File Uploads
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="Website URL">
-              <label class="form-check-label" for="Website URL">
-                Website URL
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="Media Recordings">
-              <label class="form-check-label" for="Media Recordings">
-                Media Recordings
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="Student Annotation">
-              <label class="form-check-label" for="Student Annotation">
-                Student Annotation
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="File Uploads">
-              <label class="form-check-label" for="File Uploads">
-                File Uploads
-              </label>
-            </div>
-          </div>
 
-          <div id="fdiv">
-            <label for="Submission Attempts" class="form-label">
-              <div id="section">Submission Attempts</div>
-            </label>
-            <select id="Submission Attempts" class="form-select" style="width: 50%;">
-              <option>Unlimited</option>
-              <option>Limited</option>
-            </select>
-          </div>
+            <div id="fdiv">
+              <label for="Submission Attempts" class="form-label">
+                <div id="section">Submission Attempts</div>
+              </label>
+              <select id="Submission Attempts" class="form-select" style="width: 50%;">
+                <option>Unlimited</option>
+                <option>Limited</option>
+              </select>
+            </div>
 
 
             <div id="fdiv">
@@ -306,23 +326,24 @@
               <div id="section">Until</div>
               <input type="date" class="form-control">
             </div>
-           
-            <div id="separate">
-              <hr>
-              <div class="Ebuttons">
-                <a href="assignments.html" id="Cancel" class="btn btn-outline-secondary">
-                  Cancel
-                </a>
+          </div>
 
-                <a href="assignments.html" id="Save" class="btn btn-danger">
-                  Save Profile
-                </a>
-              </div>
+          <div id="separate">
+            <hr>
+            <div class="Ebuttons">
+              <a href="assignments.html" id="Cancel" class="btn btn-outline-secondary">
+                Cancel
+              </a>
+
+              <a href="assignments.html" id="Save" class="btn btn-danger">
+                Save Profile
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   </div>
   </div>
