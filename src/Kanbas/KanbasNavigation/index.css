@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#sidebar .list-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+#sidebar .list-group-item.active {
+    background-color: white;
+    color: red;
+}
+
+#sidebar .list-group-item i {
+    color: red;
+    margin-top: 50px;
+}
+
+#sidebar {
+    background-color: black;
+    width: 85px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+
+.red-icon {
+    margin: 5px;
+    color: red;
+  }

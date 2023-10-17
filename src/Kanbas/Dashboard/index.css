@@ -1,0 +1,46 @@
+.TitleFlex{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+.Title{
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.SubHeader{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-right: 80px;
+    padding-left: 30px;
+    padding-top: 0px;
+}
+
+.card{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px !important;
+}
+
+.card-title a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cardRow{
+    padding-left: 10px;
+}
