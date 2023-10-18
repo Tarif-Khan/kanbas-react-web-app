@@ -1,0 +1,144 @@
+.Content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+}
+
+.Content .Contact {
+    padding-top: 40px;
+}
+
+.Content .Contact a{
+    color: red;
+    text-decoration: none;
+}
+
+.Content .Biography{
+    padding-top: 40px;
+}
+
+.Content .Links{
+    padding-top: 40px;
+}
+
+.Content .Links a{
+    color: red;
+    text-decoration: none;
+}
+
+
+.Content .Name{
+    padding-top: 20px;
+}
+
+.EditButton {
+    height: 45px;
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+.threeDots {
+    height: 45px;
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+.EditButton .fa-check-circle{
+    color: green;
+}
+
+.Links{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+}
+
+.Ebuttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.Cancel-Editing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.Content .form-control{
+    width: 50%;
+}
+
+.Content .Links .form-control{
+    width:80%
+}
+
+.Links i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70;   
+    height: 130;
+}
+
+
+.TitleFlex{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.section{
+    font-size: x-large;
+    font-weight:450;
+}
+
+.form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+  .form-select:focus{
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+
+  .float-end .fa-check-circle{
+    color: green;
+}
+
+.Dimension1{
+    font-weight: 600;
+}
+
+.HomeItems{
+    border-left: 7px solid green;;
+}
+
+.HomeItemOItem .Dimension1{
+    margin-left: 30px;
+}
+
+.HomeItemOItem{
+    border-left: 7px solid green;;
+}
+
+.HomeItemOItem a{
+    margin-left: 30px;
+    color: red;
+    text-decoration: none;
+}

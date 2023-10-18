@@ -6,6 +6,7 @@ import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import Modules from "./Modules/index";
 import { useLocation } from "react-router-dom";
 import Home from "./Home";
+import Assignments from "./Assignments";
 
 
 function Courses() {
@@ -86,7 +87,7 @@ function Courses() {
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />
             <Route path="Modules" element={<Modules />} />
-            <Route path="Assignments" element={<h1>Assignments</h1>} />
+            <Route path="Assignments" element={<Assignments/>} />
             <Route
               path="Assignments/:assignmentId"
               element={<h1>Assignment Editor</h1>}
