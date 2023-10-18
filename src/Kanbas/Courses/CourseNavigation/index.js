@@ -31,8 +31,9 @@ function CourseNavigation() {
             <small class="text-truncate">
               202410_1 Fall 2023 Semester Full Term
             </small>
+          
           </div>
-
+          <br />
             {links.map((link, index) => (
               <Link
                 key={index}

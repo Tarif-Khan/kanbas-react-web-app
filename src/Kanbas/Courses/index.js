@@ -3,6 +3,10 @@ import "./index.css";
 import { FaGlasses, FaBars } from "react-icons/fa";
 import CourseNavigation from "./CourseNavigation";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import Modules from "./Modules/index";
+import { useLocation } from "react-router-dom";
+import Home from "./Home";
+
 
 function Courses() {
   const { courseId } = useParams();
@@ -10,7 +14,37 @@ function Courses() {
   const breadcrubDivider = {
     "--bs-breadcrumb-divider": "'>'",
   };
-  const { navItem } = useParams();
+
+  const routeConfig = {
+    "Home": "Home",
+    "Modules": "Modules",
+    "Assignments": "Assignments",
+    "Grades": "Grades",
+    "Piazza":"Piazza",
+    "Zoom%20Meetings":"Zoom Meetings",
+    "Quizzes":"Quizzes",
+    "People":"People",
+    "Panopto%20Video":"Panopto Video",
+    "Discussions":"Discussions",
+    "Announcements":"Announcements",
+    "Pages":"Pages",
+    "Files":"Files",
+    "Rubrics":"Rubrics",
+    "Outcomes":"Outcomes",
+    "Collaborations":"Collaborations",
+    "Syllabus":"Syllabus",
+    "Progress%20Reports%20(EAB%20Navigate)":"Progress Reports (EAB Navigate)",
+    "Settings":"Settings",
+  };
+
+  // Determine the label for the breadcrumb based on the current route
+  const location = useLocation();
+  const currentRoute = location.pathname.split("/").pop();
+  const breadcrumbLabel = routeConfig[currentRoute]
+
+
+ console.log("Tarif");
+ console.log(currentRoute)
 
   return (
     <div class="col">
@@ -30,9 +64,8 @@ function Courses() {
               <li class="breadcrumb-item CourseTitle">
                 <a href="">{course.name}</a>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Home
-                {/* Home {navItem} */}
+              <li class="breadcrumb-item active" aria-current="page"> {breadcrumbLabel}
+            
               </li>
             </ol>
           </nav>
@@ -45,14 +78,14 @@ function Courses() {
         <div
           className="overflow-y-scroll position-fixed bottom-0 end-0"
           style={{
-            left: "500px",
-            top: "50px",
+            left: "400px",
+            top: "100px"
           }}
         >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<h1>Home</h1>} />
-            <Route path="Modules" element={<h1>Modules</h1>} />
+            <Route path="Home" element={<Home/>} />
+            <Route path="Modules" element={<Modules />} />
             <Route path="Assignments" element={<h1>Assignments</h1>} />
             <Route
               path="Assignments/:assignmentId"

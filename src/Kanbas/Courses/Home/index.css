@@ -1,0 +1,72 @@
+.Status{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0 !important;
+}
+
+.StatusHead{
+    font-weight: 500;
+    font-size: 18;
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.Status button{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.toDo{
+    color: red;
+}
+
+.toDo a{
+    color: red;
+    text-decoration: none;
+}
+
+.cal{
+    margin-left: 10px;
+}
+
+.Coming{
+    padding-top: 10px;
+}
+
+.cal2 a{
+    color: red;
+    text-decoration: none;
+}
+
+.toDoItem{
+    padding-left: 10px;
+    color: red;
+}
+
+.desc{
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.secondMenu a div{
+    color: red;
+}
+
+.secondMenu a i{
+    color: red;
+}
+
+.secondMenu .list-group-item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+.myRow{
+    display: flex;
+    flex-direction: row;
+    padding-right: 35px;
+}
