@@ -7,6 +7,10 @@ import Modules from "./Modules/index";
 import { useLocation } from "react-router-dom";
 import Home from "./Home";
 import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/AssignmentEditor";
+import Grades from "./Grades";
+
+
 
 
 function Courses() {
@@ -41,11 +45,24 @@ function Courses() {
   // Determine the label for the breadcrumb based on the current route
   const location = useLocation();
   const currentRoute = location.pathname.split("/").pop();
-  const breadcrumbLabel = routeConfig[currentRoute]
+  var breadcrumbLabel = routeConfig[currentRoute]
+  const lastTwoParts = location.pathname.split("/").slice(-2);
+
+  const courseAssignment = db.assignments.find(
+    (assignment) => assignment._id === lastTwoParts[1]
+  );
+
+  // Check if the last part is "Assignments" and there's something after it
+  if (lastTwoParts.length === 2 && lastTwoParts[0] === "Assignments") {
+    breadcrumbLabel = routeConfig[lastTwoParts.join("/")] = `Assignments > ${courseAssignment.title}`;
+  }
 
 
  console.log("Tarif");
  console.log(currentRoute)
+ console.log(lastTwoParts)
+ console.log( routeConfig[lastTwoParts.join("/")] = `Assignments > ${course.name}`)
+
 
   return (
     <div class="col">
@@ -90,9 +107,9 @@ function Courses() {
             <Route path="Assignments" element={<Assignments/>} />
             <Route
               path="Assignments/:assignmentId"
-              element={<h1>Assignment Editor</h1>}
+              element={<AssignmentEditor/>}
             />
-            <Route path="Grades" element={<h1>Grades</h1>} />
+             <Route path="Grades" element={<Grades />} />
           </Routes>
         </div>
       </div>      
