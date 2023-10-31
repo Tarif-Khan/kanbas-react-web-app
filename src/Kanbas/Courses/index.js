@@ -10,42 +10,39 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
-
-
-
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const breadcrubDivider = {
     "--bs-breadcrumb-divider": "'>'",
   };
 
   const routeConfig = {
-    "Home": "Home",
-    "Modules": "Modules",
-    "Assignments": "Assignments",
-    "Grades": "Grades",
-    "Piazza":"Piazza",
-    "Zoom%20Meetings":"Zoom Meetings",
-    "Quizzes":"Quizzes",
-    "People":"People",
-    "Panopto%20Video":"Panopto Video",
-    "Discussions":"Discussions",
-    "Announcements":"Announcements",
-    "Pages":"Pages",
-    "Files":"Files",
-    "Rubrics":"Rubrics",
-    "Outcomes":"Outcomes",
-    "Collaborations":"Collaborations",
-    "Syllabus":"Syllabus",
-    "Progress%20Reports%20(EAB%20Navigate)":"Progress Reports (EAB Navigate)",
-    "Settings":"Settings",
+    Home: "Home",
+    Modules: "Modules",
+    Assignments: "Assignments",
+    Grades: "Grades",
+    Piazza: "Piazza",
+    "Zoom%20Meetings": "Zoom Meetings",
+    Quizzes: "Quizzes",
+    People: "People",
+    "Panopto%20Video": "Panopto Video",
+    Discussions: "Discussions",
+    Announcements: "Announcements",
+    Pages: "Pages",
+    Files: "Files",
+    Rubrics: "Rubrics",
+    Outcomes: "Outcomes",
+    Collaborations: "Collaborations",
+    Syllabus: "Syllabus",
+    "Progress%20Reports%20(EAB%20Navigate)": "Progress Reports (EAB Navigate)",
+    Settings: "Settings",
   };
 
   // Determine the label for the breadcrumb based on the current route
   const location = useLocation();
   const currentRoute = location.pathname.split("/").pop();
-  var breadcrumbLabel = routeConfig[currentRoute]
+  var breadcrumbLabel = routeConfig[currentRoute];
   const lastTwoParts = location.pathname.split("/").slice(-2);
 
   const courseAssignment = db.assignments.find(
@@ -54,15 +51,17 @@ function Courses() {
 
   // Check if the last part is "Assignments" and there's something after it
   if (lastTwoParts.length === 2 && lastTwoParts[0] === "Assignments") {
-    breadcrumbLabel = routeConfig[lastTwoParts.join("/")] = `Assignments > ${courseAssignment.title}`;
+    breadcrumbLabel = routeConfig[
+      lastTwoParts.join("/")
+    ] = `Assignments > ${courseAssignment.title}`;
   }
 
-
- console.log("Tarif");
- console.log(currentRoute)
- console.log(lastTwoParts)
- console.log( routeConfig[lastTwoParts.join("/")] = `Assignments > ${course.name}`)
-
+  console.log("Tarif");
+  console.log(currentRoute);
+  console.log(lastTwoParts);
+  console.log(
+    (routeConfig[lastTwoParts.join("/")] = `Assignments > ${course.name}`)
+  );
 
   return (
     <div class="col">
@@ -82,37 +81,37 @@ function Courses() {
               <li class="breadcrumb-item CourseTitle">
                 <a href="">{course.name}</a>
               </li>
-              <li class="breadcrumb-item active" aria-current="page"> {breadcrumbLabel}
-            
+              <li class="breadcrumb-item active" aria-current="page">
+                {" "}
+                {breadcrumbLabel}
               </li>
             </ol>
           </nav>
         </h2>
       </div>
 
-    
-        <CourseNavigation />
+      <CourseNavigation />
       <div>
         <div
           className="overflow-y-scroll position-fixed bottom-0 end-0"
           style={{
             left: "400px",
-            top: "100px"
+            top: "100px",
           }}
         >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<Home/>} />
+            <Route path="Home" element={<Home />} />
             <Route path="Modules" element={<Modules />} />
-            <Route path="Assignments" element={<Assignments/>} />
+            <Route path="Assignments" element={<Assignments />} />
             <Route
               path="Assignments/:assignmentId"
-              element={<AssignmentEditor/>}
+              element={<AssignmentEditor />}
             />
-             <Route path="Grades" element={<Grades />} />
+            <Route path="Grades" element={<Grades />} />
           </Routes>
         </div>
-      </div>      
+      </div>
     </div>
   );
 }
