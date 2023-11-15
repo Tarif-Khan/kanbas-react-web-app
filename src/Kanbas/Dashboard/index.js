@@ -3,7 +3,7 @@ import db from "../Database";
 import "./index.css";
 import png from "./card.png";
 import { FaBook } from "react-icons/fa";
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 
 function Dashboard({
   courses,
@@ -72,7 +72,10 @@ function Dashboard({
                     Add
                   </button>
 
-                  <button className="btn btn-primary" onClick={updateCourse}>
+                  <button
+                    className="btn btn-primary"
+                    onClick={() => updateCourse(course)}
+                  >
                     Update
                   </button>
                 </div>
@@ -84,7 +87,7 @@ function Dashboard({
                       <h5 class="card-title text-truncate">
                         <Link
                           key={course._id}
-                          to={`/Kanbas/Courses/${course._id}`}
+                          to={`/Kanbas/Courses/${course._id.$oid}`}
                         >
                           {course.name}
                         </Link>

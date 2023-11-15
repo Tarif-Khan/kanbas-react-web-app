@@ -33,56 +33,65 @@ function Assignments() {
   };
 
   const w40 = {
-    width : "40px"
-  }
+    width: "40px",
+  };
 
   const marginR = {
-    marginright :"700px"
-  }
+    marginright: "700px",
+  };
 
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
   return (
     <div>
-      <div class ="Content">
-      <div id="buttonRow">
-                        <buttton id="EditButton" class="btn btn-outline-secondary float-end" style={w40}>
-                            <FaEllipsisV />
-                        </buttton>
+      <div class="Content">
+        <div id="buttonRow">
+          <buttton
+            id="EditButton"
+            class="btn btn-outline-secondary float-end"
+            style={w40}
+          >
+            <FaEllipsisV />
+          </buttton>
 
-                        <buttton id="EditButton" class="btn btn-danger float-end">
-                           <FaPlus />Assignment
-                        </buttton>
+          <buttton id="EditButton" class="btn btn-danger float-end">
+            <FaPlus />
+            Assignment
+          </buttton>
 
-                        <buttton id="EditButton" class="btn btn-outline-secondary float-end">
-                            <FaPlus />Group
-                        </buttton>
+          <buttton id="EditButton" class="btn btn-outline-secondary float-end">
+            <FaPlus />
+            Group
+          </buttton>
 
-                        <input class="form-control w-25" placeholder="Search for Assignment"
-                            style={marginR} />
-                    </div>
+          <input
+            class="form-control w-25"
+            placeholder="Search for Assignment"
+            style={marginR}
+          />
+        </div>
 
-                    <hr />
+        <hr />
         <div className="list-group">
-        <div class="HomeWeek">
-          <div class="list-group-item list-group-item py-3">
-            <FaGripVertical />
-            <FaCaretDown />
-            <span class="Week" style={fontWeightSt}>
-              Assignments
-            </span>
-            <div class="float-end">
-              <span class="rounded-pill" style={roundedPill}>
-                40% of Total
-              </span>
-              <FaCheckCircle color="green" />
+          <div class="HomeWeek">
+            <div class="list-group-item list-group-item py-3">
+              <FaGripVertical />
               <FaCaretDown />
-              <FaPlus />
-              <FaEllipsisV />
+              <span class="Week" style={fontWeightSt}>
+                Assignments
+              </span>
+              <div class="float-end">
+                <span class="rounded-pill" style={roundedPill}>
+                  40% of Total
+                </span>
+                <FaCheckCircle color="green" />
+                <FaCaretDown />
+                <FaPlus />
+                <FaEllipsisV />
+              </div>
             </div>
           </div>
-        </div>
           {courseAssignments.map((assignment) => (
             <Link
               key={assignment._id}
@@ -113,9 +122,7 @@ function Assignments() {
         </div>
       </div>
 
-      <div class="list-group">
-       
-      </div>
+      <div class="list-group"></div>
     </div>
   );
 }
