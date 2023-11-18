@@ -5,7 +5,7 @@ const COURSES_URL = "http://localhost:4000/api/courses";
 //   "https://kanbas-node-server-app-cs1234-sp23.onrender.com/api/modules";
 // Testing
 const API_BASE = process.env.REACT_APP_API_BASE;
-const MODULES_URL = `${API_BASE}/modules`;
+const MODULES_URL = `${API_BASE}/api/modules`;
 
 export const createModule = async (courseId, module) => {
   const response = await axios.post(
