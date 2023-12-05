@@ -6,7 +6,6 @@ const request = axios.create({
 });
 
 const API_BASE = process.env.REACT_APP_API_BASE;
-console.log(API_BASE);
 export const USERS_API = `${API_BASE}/users`;
 
 export const signin = async (credentials) => {
