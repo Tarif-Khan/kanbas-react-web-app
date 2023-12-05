@@ -29,7 +29,9 @@ function Kanbas() {
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
+    console.log(response.data);
   };
+
   useEffect(() => {
     findAllCourses();
   }, []);
