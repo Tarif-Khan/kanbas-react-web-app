@@ -22,6 +22,21 @@ function Account() {
   return (
     <div className="w-50">
       <h1>Account</h1>
+      <button className="btn btn-primary">
+        <Link to="/kanbas/signin" className="btn btn-warning w-100">
+          sign in
+        </Link>
+      </button>
+      <button className="btn btn-danger">
+        <Link to="/kanbas/signup" className="btn btn-warning w-100">
+          sign up
+        </Link>
+      </button>
+      <button className="btn btn-warning">
+        <Link to="/kanbas/admin/users" className="btn btn-warning w-100">
+          Users
+        </Link>
+      </button>
       {account && (
         <div>
           <input
