@@ -1,11 +1,13 @@
 import axios from "axios";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 export const BASE_API = process.env.REACT_APP_BASE_API_URL;
-// export const USERS_API = `${BASE_API}/api/users`;
+
 const request = axios.create({
   withCredentials: true,
 });
 
 const API_BASE = process.env.REACT_APP_API_BASE;
+console.log(API_BASE);
 export const USERS_API = `${API_BASE}/users`;
 
 export const signin = async (credentials) => {
